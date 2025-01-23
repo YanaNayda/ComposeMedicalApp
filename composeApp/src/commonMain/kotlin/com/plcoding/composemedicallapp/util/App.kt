@@ -10,10 +10,10 @@ import androidx.compose.runtime.remember
 
 @Composable
 fun MedApp() {
-    // Состояние текущего экрана
+
     val currentScreen = remember { mutableStateOf<Screen>(Screen.Main) }
 
-    // Навигация между экранами
+
     AppNavigation(currentScreen = currentScreen)
 }
 
